@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog de Mentor Tesis: artículos, guías y consejos prácticos para redactar, mejorar y defender tu tesis de grado o posgrado con éxito.">
+  <title>Blog | Mentor Tesis — Guías para Redactar y Mejorar tu Tesis</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .blog-hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0c4a6e 100%);
+      padding: 5rem 2rem 3rem;
+      text-align: center;
+      color: white;
+    }
+    .blog-hero .section-tag { background: rgba(255,255,255,0.15); color: #93c5fd; border: 1px solid rgba(147,197,253,0.3); }
+    .blog-hero h1 { font-size: 2.6rem; margin: 1rem 0 0.8rem; color: white; }
+    .blog-hero p { color: #cbd5e1; max-width: 600px; margin: 0 auto; font-size: 1.05rem; line-height: 1.8; }
+
+    .blog-grid-section { padding: 5rem 2rem; background: #f8fafc; }
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 2rem; max-width: 1100px; margin: 0 auto; }
+
+    .blog-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1px solid var(--border-color);
+    }
+    .blog-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(0,0,0,0.12); }
+
+    .blog-card-header {
+      padding: 2rem 1.8rem 1rem;
+      background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+    }
+    .blog-card-emoji { font-size: 2.5rem; margin-bottom: 0.75rem; display: block; }
+    .blog-card-tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      color: #93c5fd;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .blog-card-header h2 {
+      color: white;
+      font-size: 1.15rem;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    .blog-card-body { padding: 1.5rem 1.8rem; flex: 1; }
+    .blog-card-body p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.2rem; }
+    .blog-card-meta { display: flex; gap: 1rem; font-size: 0.8rem; color: #94a3b8; flex-wrap: wrap; margin-bottom: 1.5rem; }
+    .blog-card-meta span { display: flex; align-items: center; gap: 0.25rem; }
+
+    .blog-read-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--primary);
+      color: white;
+      padding: 0.65rem 1.4rem;
+      border-radius: var(--radius-md);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: background 0.2s;
+      margin-top: auto;
+    }
+    .blog-read-btn:hover { background: var(--accent); }
+
+    .blog-cta-section {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      padding: 4rem 2rem;
+      text-align: center;
+      color: white;
+    }
+    .blog-cta-section h2 { color: #fbbf24; margin-bottom: 1rem; }
+    .blog-cta-section p { color: #cbd5e1; max-width: 550px; margin: 0 auto 2rem; line-height: 1.8; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-wrapper">
+        <img src="img/logo.jpg" alt="Mentor Tesis Logo" class="logo-img">
+        <span class="logo-text">Mentor Tesis</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="contacto.html" class="nav-cta">Asesoría Gratuita</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+      <span class="section-tag">Recursos Académicos</span>
+      <h1>Blog Mentor Tesis</h1>
+      <p>Guías prácticas, consejos de expertos y estrategias comprobadas para que redactes, mejores y defiendas tu tesis con éxito.</p>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-grid-section">
+      <div class="blog-grid">
+
+        <article class="blog-card">
+          <div class="blog-card-header">
+            <span class="blog-card-emoji">🎯</span>
+            <span class="blog-card-tag">Investigación</span>
+            <h2>Cómo Elegir el Tema de tu Tesis: Guía Definitiva para No Equivocarte</h2>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span>📅 Julio 2026</span>
+              <span>⏱️ 8 min</span>
+            </div>
+            <p>Un tema mal elegido puede costarte meses extra. Aprende los criterios clave, errores comunes y el proceso paso a paso para seleccionar el tema ideal.</p>
+            <a href="blog-elegir-tema-tesis.html" class="blog-read-btn">Leer Artículo →</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-header">
+            <span class="blog-card-emoji">📚</span>
+            <span class="blog-card-tag">Redacción Académica</span>
+            <h2>Cómo Redactar el Marco Teórico de tu Tesis Paso a Paso</h2>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span>📅 Julio 2026</span>
+              <span>⏱️ 10 min</span>
+            </div>
+            <p>El marco teórico no es un resumen de libros. Aprende a construirlo con rigor académico, citas APA correctas y fuentes de alta calidad.</p>
+            <a href="blog-marco-teorico.html" class="blog-read-btn">Leer Artículo →</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-header">
+            <span class="blog-card-emoji">🔬</span>
+            <span class="blog-card-tag">Metodología</span>
+            <h2>Metodología de la Tesis: ¿Cuantitativa, Cualitativa o Mixta?</h2>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span>📅 Julio 2026</span>
+              <span>⏱️ 12 min</span>
+            </div>
+            <p>La metodología define toda tu investigación. Descubre cuál enfoque es el correcto para tu problema, con comparación detallada y ejemplos reales.</p>
+            <a href="blog-metodologia-tesis.html" class="blog-read-btn">Leer Artículo →</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-header">
+            <span class="blog-card-emoji">🎤</span>
+            <span class="blog-card-tag">Sustentación</span>
+            <h2>Cómo Defender tu Tesis con Éxito: Estrategias para el Día D</h2>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span>📅 Julio 2026</span>
+              <span>⏱️ 9 min</span>
+            </div>
+            <p>Preparación estratégica, simulacros, manejo del nerviosismo y cómo responder las preguntas más difíciles del jurado evaluador.</p>
+            <a href="blog-defender-tesis.html" class="blog-read-btn">Leer Artículo →</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-header">
+            <span class="blog-card-emoji">🤖</span>
+            <span class="blog-card-tag">Inteligencia Artificial</span>
+            <h2>Cómo Usar la IA para Mejorar tu Tesis (Sin Hacer Trampa)</h2>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span>📅 Julio 2026</span>
+              <span>⏱️ 11 min</span>
+            </div>
+            <p>Herramientas de IA para bibliografía, escritura, corrección y análisis. Aprende a usarlas éticamente y multiplicar tu productividad.</p>
+            <a href="blog-ia-para-tesis.html" class="blog-read-btn">Leer Artículo →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Blog CTA -->
+    <section class="blog-cta-section">
+      <h2>¿Listo para llevar tu tesis al siguiente nivel?</h2>
+      <p>Nuestros mentores académicos están disponibles para guiarte en cada etapa de tu proceso de investigación. Primera consulta completamente gratis.</p>
+      <a href="contacto.html" class="btn btn-primary">Solicitar Asesoría Gratuita →</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Programa Mentor Tesis. Todos los derechos reservados.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
