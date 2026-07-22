@@ -520,6 +520,76 @@ footer {
   margin-left: 15px;
 }
 
+/* Testimonials Section Styles */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.testimonial-card {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(217, 119, 6, 0.3);
+}
+
+.stars {
+  color: #f59e0b;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.quote-text {
+  color: var(--text-dark);
+  font-size: 1rem;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-avatar {
+  width: 48px;
+  height: 48px;
+  background: var(--primary);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.user-details h4 {
+  font-size: 1rem;
+  color: var(--primary);
+  margin-bottom: 0.1rem;
+}
+
+.user-details p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
 /* Responsiveness */
 @media (max-width: 900px) {
   .hero-container {
