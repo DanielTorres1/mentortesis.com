@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacto Mentor Tesis - Solicita tu asesoría académica gratuita para la elaboración de tu tesis.">
+  <title>Contacto | Mentor Tesis</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .contact-container {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    .contact-card {
+      background: #ffffff;
+      padding: 2.5rem;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+    }
+    .contact-card h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+    }
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      font-size: 0.9rem;
+      color: var(--text-dark);
+    }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 0.95rem;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.15);
+    }
+    .info-item {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      align-items: flex-start;
+    }
+    .info-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--accent-light);
+      color: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+    .info-text h4 {
+      font-size: 1.05rem;
+      color: var(--primary);
+      margin-bottom: 0.2rem;
+    }
+    .info-text p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    @media (max-width: 768px) {
+      .contact-container { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-wrapper">
+        <img src="img/logo.jpg" alt="Mentor Tesis Logo" class="logo-img">
+        <span class="logo-text">Mentor Tesis</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="index.html#libro-destacado">Libro Amazon</a></li>
+          <li><a href="contacto.html" class="active nav-cta">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" style="padding: 3rem 2rem 4rem; text-align: center;">
+      <div class="section-container">
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Contáctanos para tu <span>Asesoría Gratuita</span></h1>
+        <p style="color: #cbd5e1; max-width: 600px; margin: 0 auto;">Estamos listos para orientarte en la elaboración, corrección y preparación de tu tesis con metodología profesional e IA.</p>
+      </div>
+    </section>
+
+    <div class="contact-container">
+      <div class="contact-card">
+        <h2>Envíanos un Mensaje</h2>
+        <form action="#" method="POST" onsubmit="alert('¡Gracias por comunicarte con Mentor Tesis! Nos pondremos en contacto contigo pronto.'); return false;">
+          <div class="form-group">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono / WhatsApp</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+591 70000000">
+          </div>
+          <div class="form-group">
+            <label for="tipo">Nivel de Estudio</label>
+            <select id="tipo" name="tipo">
+              <option value="licenciatura">Pregrado / Licenciatura</option>
+              <option value="maestria">Maestría</option>
+              <option value="doctorado">Doctorado</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">¿En qué etapa se encuentra tu tesis?</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe brevemente tu tema o estado actual..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Consulta Gratuita</button>
+        </form>
+      </div>
+
+      <div>
+        <div class="contact-card" style="margin-bottom: 2rem;">
+          <h2>Información de Contacto</h2>
+          <div class="info-item">
+            <div class="info-icon">📲</div>
+            <div class="info-text">
+              <h4>WhatsApp Directo</h4>
+              <p>Atención personalizada e inmediata para tu proyecto de tesis.</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">✉️</div>
+            <div class="info-text">
+              <h4>Correo Electrónico</h4>
+              <p>contacto@mentortesis.com</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">🕒</div>
+            <div class="info-text">
+              <h4>Horario de Atención</h4>
+              <p>Lunes a Sábado: 8:00 AM - 8:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white;">
+          <h3 style="color: #fbbf24; margin-bottom: 0.8rem;">Libro Recomendado</h3>
+          <p style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 1.2rem;">¿Quieres avanzar por tu cuenta? Lee la <strong>"Guía Práctica para Elaborar tu Tesis"</strong> de Yonel Delgado Requejo disponible en Amazon.</p>
+          <a href="https://www.amazon.com/-/es/Yonel-Delgado-Requejo-ebook/dp/B0DBKS8KBV" target="_blank" rel="noopener noreferrer" class="amazon-btn" style="width: 100%; justify-content: center; font-size: 0.95rem; padding: 0.8rem;">Ver en Amazon Kindle →</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Programa Mentor Tesis. Todos los derechos reservados.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="https://www.amazon.com/-/es/Yonel-Delgado-Requejo-ebook/dp/B0DBKS8KBV" target="_blank" rel="noopener noreferrer">Libro en Amazon</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
