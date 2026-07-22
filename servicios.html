@@ -3,10 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios de Asesoría de Tesis | Mentor Tesis</title>
+  <meta name="description" content="Servicios de Asesoría de Tesis y Testimonios de Estudiantes | Mentor Tesis">
+  <title>Servicios y Testimonios | Mentor Tesis</title>
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .testimonials-section {
+      padding: 5rem 2rem;
+      background: #ffffff;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .testimonial-card {
+      background: var(--bg-light);
+      padding: 2rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(217, 119, 6, 0.3);
+    }
+    .stars {
+      color: #f59e0b;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .quote-text {
+      color: var(--text-dark);
+      font-size: 1rem;
+      line-height: 1.6;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .user-avatar {
+      width: 48px;
+      height: 48px;
+      background: var(--primary);
+      color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    .user-details h4 {
+      font-size: 1rem;
+      color: var(--primary);
+      margin-bottom: 0.1rem;
+    }
+    .user-details p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Header -->
   <header>
     <div class="header-container">
       <a href="index.html" class="logo-wrapper">
@@ -16,29 +87,130 @@
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="index.html#libro-destacado">Libro Amazon</a></li>
+          <li><a href="servicios.html" class="active">Servicios</a></li>
+          <li><a href="index.html#stats">Nosotros</a></li>
           <li><a href="contacto.html" class="nav-cta">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
   <main>
-    <section id="hero" style="padding: 4rem 2rem; text-align: center;">
+    <!-- Hero Section -->
+    <section id="hero" style="padding: 4rem 2rem 5rem; text-align: center;">
       <div class="section-container">
-        <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Nuestros Servicios Académicos</h1>
-        <p style="color: #cbd5e1; max-width: 650px; margin: 0 auto 2rem;">Asesoría metodológica, revisión APA, investigación asistida por Inteligencia Artificial y simulacros de sustentación.</p>
+        <div class="hero-badge">
+          🎓 Acompañamiento Académico Especializado
+        </div>
+        <h1 style="font-size: 2.8rem; margin-bottom: 1rem;">Nuestros <span>Servicios Académicos</span></h1>
+        <p style="color: #cbd5e1; max-width: 650px; margin: 0 auto 2rem; font-size: 1.1rem;">
+          Te brindamos soporte integral en metodología de investigación, redacción científica, aplicación ética de IA y preparación para la defensa oral de tu tesis.
+        </p>
         <a href="contacto.html" class="btn btn-primary">Solicitar Asesoría Gratuita</a>
       </div>
     </section>
-    <section style="padding: 4rem 2rem; background: white;">
-      <div class="section-container" style="text-align: center;">
-        <h2>¿Necesitas ayuda con tu Tesis?</h2>
-        <p style="color: #64748b; margin: 1rem 0 2rem;">Ofrecemos asesoría integral en desarrollo de proyectos de tesis, marco teórico, diseño metodológico y defensa oral.</p>
-        <a href="contacto.html" class="btn btn-primary">Solicitar Asesoría Personalizada →</a>
+
+    <!-- Detailed Services Grid -->
+    <section id="servicios-resumen" style="padding: 5rem 2rem;">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Especialidades</span>
+          <h2>Servicios Diseñados para tu Éxito</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">📐</div>
+            <h3>Asesoría Metodológica Integral</h3>
+            <p>Formulación del problema de investigación, delimitación de objetivos, matriz de consistencia, planteamiento de hipótesis y diseño muestral riguroso.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🤖</div>
+            <h3>Investigación asistida con IA</h3>
+            <p>Uso ético de Inteligencia Artificial para el análisis sistemático de literatura académica, filtrado de fuentes secundarias y resúmenes estructurados.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">📝</div>
+            <h3>Redacción & Normas APA / ISO</h3>
+            <p>Corrección de estilo profesional, citado riguroso (APA 7ma edición, Vancouver, ISO 690) y verificación exhaustiva de originalidad anticorrupción/Turnitin.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🎓</div>
+            <h3>Simulacro de Sustentación</h3>
+            <p>Ensayos de defensa oral con jurados simulados, elaboración de diapositivas impactantes y banco de preguntas probables del comité evaluador.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Testimonios</span>
+          <h2>Lo que dicen nuestros tesistas graduados</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div>
+              <div class="stars">★★★★★</div>
+              <p class="quote-text">"Gracias a la asesoría metodológica logré estructurar mi matriz de consistencia y aprobar mi tesis de Maestría con Mención de Honor. El acompañamiento fue constante y muy profesional."</p>
+            </div>
+            <div class="user-info">
+              <div class="user-avatar">MF</div>
+              <div class="user-details">
+                <h4>Dra. María Fernanda R.</h4>
+                <p>Maestría en Educación Superior</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="stars">★★★★★</div>
+              <p class="quote-text">"El simulacro de defensa oral me dio toda la confianza frente al jurado. Las preguntas que me hicieron en la sustentación real fueron exactamente las que practicamos en la mentoría."</p>
+            </div>
+            <div class="user-info">
+              <div class="user-avatar">CM</div>
+              <div class="user-details">
+                <h4>Ing. Carlos Mendoza</h4>
+                <p>Licenciatura en Ingeniería de Sistemas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="stars">★★★★★</div>
+              <p class="quote-text">"Aprender a usar la IA para la revisión bibliográfica sistemática me ahorró meses de trabajo. El equipo de Mentor Tesis me guió con total transparencia y rigor científico."</p>
+            </div>
+            <div class="user-info">
+              <div class="user-avatar">SG</div>
+              <div class="user-details">
+                <h4>Lic. Sofía Gutiérrez</h4>
+                <p>Tesis de Grado en Administración</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section style="padding: 5rem 2rem; background: var(--bg-light); text-align: center;">
+      <div class="section-container">
+        <h2 style="font-size: 2.2rem; margin-bottom: 1rem; color: var(--primary);">¿Listo para titularte?</h2>
+        <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 2rem;">Agenda una sesión inicial de orientación sin costo y revisemos el estado de tu tesis.</p>
+        <a href="contacto.html" class="btn btn-primary">Solicitar Asesoría Gratuita →</a>
       </div>
     </section>
   </main>
+
+  <!-- Footer -->
   <footer>
     <div class="footer-content">
       <p>&copy; 2026 Programa Mentor Tesis. Todos los derechos reservados.</p>
@@ -49,5 +221,6 @@
       </ul>
     </div>
   </footer>
+
 </body>
 </html>
