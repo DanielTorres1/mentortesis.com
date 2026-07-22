@@ -1,0 +1,71 @@
+/* css/styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #101828;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0.5rem 0 0 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fbbf24; /* un dorado para Mentor Tesis */
+}
+
+#hero {
+  padding: 2rem;
+  background: #f3f4f6;
+}
+
+#servicios-resumen {
+  padding: 2rem;
+}
+
+#servicios-resumen article {
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111827;
+  color: #ffffff;
+}
+.img-izquierda {
+  float: left;
+  width: 200px;       /* ajusta tamaño a gusto */
+  margin-right: 10px; /* espacio a la derecha */
+}
+
+.img-derecha {
+  float: right;
+  width: 200px;
+  margin-left: 10px;  /* espacio a la izquierda */
+}
+
+/* Para que el contenedor abarque ambas imágenes */
+.imagenes-laterales::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* CSS Document */
+
