@@ -1,56 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mentor Tesis</title>
+  <meta name="description" content="Mentor Tesis - Asesoría académica profesional, revisión de metodología e investigación impulsada por IA para tu tesis de grado y posgrado.">
+  <title>Mentor Tesis | Asesoría Académica e Investigación Profesional</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Programa Mentor Tesis</h1>
-<div class="imagenes-laterales">
-  <img src="img/logo.jpg" alt="Mentor Tesis" class="img-izquierda">
-  <img src="img/logo1.png" alt="Tess Mentor Tesis" class="img-derecha">
-</div>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="universo.html">Universo MT</a></li>
-        <li><a href="bolivia.html">Bolivia MT</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+  <!-- Header & Navigation -->
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-wrapper">
+        <img src="img/logo.jpg" alt="Mentor Tesis Logo" class="logo-img">
+        <span class="logo-text">Mentor Tesis</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="#servicios-resumen">Servicios</a></li>
+          <li><a href="#libro-destacado">Libro Amazon</a></li>
+          <li><a href="#stats">Nosotros</a></li>
+          <li><a href="contacto.html" class="nav-cta">Asesoría Gratuita</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section id="hero">
-      <h2>Acompa�amos tu tesis y tu vocaci�n</h2>
-      <p>Aqu� ir� un texto corto y potente explicando qu� es Mentor Tesis.</p>
-      <a href="servicios.html">Ver servicios</a>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            ⚡ Programa de Mentoría Académica 2026
+          </div>
+          <h1>Acelera y Concluye tu <span>Tesis con Éxito</span></h1>
+          <p>Te acompañamos paso a paso en la elaboración, desarrollo y defensa de tu tesis de grado, maestría o doctorado con rigor metodológico y herramientas avanzadas de IA.</p>
+          <div class="hero-buttons">
+            <a href="#servicios-resumen" class="btn btn-primary">Conocer Servicios</a>
+            <a href="#libro-destacado" class="btn btn-secondary">Ver Libro en Amazon</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <img src="img/hero-banner.png" alt="Asesoría de Tesis Profesional" class="hero-img">
+        </div>
+      </div>
     </section>
 
+    <!-- Amazon Book Feature Section -->
+    <section id="libro-destacado">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Lectura Recomendada</span>
+          <h2>Aprende la Metodología Definitiva</h2>
+        </div>
+
+        <div class="book-card">
+          <div class="book-cover-container">
+            <a href="https://www.amazon.com/-/es/Yonel-Delgado-Requejo-ebook/dp/B0DBKS8KBV" target="_blank" rel="noopener noreferrer" class="book-cover-link" title="Ver Libro en Amazon">
+              <img src="img/book-cover.png" alt="Guía Práctica para Elaborar tu Tesis por Yonel Delgado Requejo" class="book-cover-img">
+            </a>
+          </div>
+          <div class="book-info">
+            <h3>Guía Práctica para Elaborar tu Tesis</h3>
+            <div class="book-author">
+              ✍️ Por <strong>Yonel Delgado Requejo</strong> | Edición Ebook Kindle
+            </div>
+            <p class="book-description">
+              Una obra imprescindible diseñada para estudiantes e investigadores. Este libro desglosa de forma clara y directa las estrategias clave para formular el problema, estructurar la metodología, analizar datos y preparar una sustentación impecable ante el jurado.
+            </p>
+            <ul class="book-features">
+              <li>Estructura clara paso a paso</li>
+              <li>Planteamiento metodológico práctico</li>
+              <li>Formateo y normativa académica</li>
+              <li>Estrategias de defensa ante jurados</li>
+            </ul>
+            <a href="https://www.amazon.com/-/es/Yonel-Delgado-Requejo-ebook/dp/B0DBKS8KBV" target="_blank" rel="noopener noreferrer" class="amazon-btn">
+              🛒 Adquirir en Amazon Kindle →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Summary Section -->
     <section id="servicios-resumen">
-      <h2>Lo que hacemos por ti</h2>
-      <article>
-        <h3>Orientaci�n vocacional</h3>
-        <p>Breve descripci�n del servicio.</p>
-      </article>
-      <article>
-        <h3>Acompa�amiento de tesis</h3>
-        <p>Breve descripci�n del servicio.</p>
-      </article>
-      <article>
-        <h3>Cursos con IA</h3>
-        <p>Breve descripci�n del servicio.</p>
-      </article>
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Nuestras Soluciones</span>
+          <h2>¿Cómo te ayudamos a obtener tu título?</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">📐</div>
+            <h3>Asesoría Metodológica</h3>
+            <p>Estructuración científica de tu matriz de consistencia, hipótesis, delimitación del problema y diseño muestral riguroso.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🤖</div>
+            <h3>Investigación asistida con IA</h3>
+            <p>Aprovechamos herramientas modernas de Inteligencia Artificial para el filtrado sistemático de literatura y revisión bibliográfica.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">📝</div>
+            <h3>Redacción y Normas APA</h3>
+            <p>Corrección de estilo profesional, citado riguroso (APA 7ma ed., Vancouver, ISO) y verificación de originalidad académica.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">🎓</div>
+            <h3>Simulacro de Sustentación</h3>
+            <p>Entrenamiento intensivo y simulaciones de defensa oral ante jurado evaluador para garantizar tu aprobación con distinción.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats">
+      <div class="section-container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>500+</h3>
+            <p>Tesistas Guiados</p>
+          </div>
+          <div class="stat-item">
+            <h3>98%</h3>
+            <p>Tasa de Aprobación</p>
+          </div>
+          <div class="stat-item">
+            <h3>10+</h3>
+            <p>Años de Experiencia</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Garantía de Calidad</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Programa Mentor Tesis</p>
+    <div class="footer-content">
+      <p>&copy; 2026 Programa Mentor Tesis. Todos los derechos reservados.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#servicios-resumen">Servicios</a></li>
+        <li><a href="https://www.amazon.com/-/es/Yonel-Delgado-Requejo-ebook/dp/B0DBKS8KBV" target="_blank" rel="noopener noreferrer">Libro Yonel Delgado Requejo en Amazon</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
   </footer>
+
 </body>
 </html>
-
